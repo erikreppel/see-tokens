@@ -54,7 +54,7 @@ def hf_tokens(text: str, model_name: str) -> list[str]:
 
 
 TOKENIZERS = [
-    ("GPT-4o", "o200k_base", lambda t: tiktoken_tokens(t, "o200k_base")),
+    ("GPT-5", "o200k_base", lambda t: tiktoken_tokens(t, "o200k_base")),
     ("GPT-4 / 3.5", "cl100k_base", lambda t: tiktoken_tokens(t, "cl100k_base")),
     ("LLaMA 3", "NousResearch/Meta-Llama-3-8B", lambda t: hf_tokens(t, "NousResearch/Meta-Llama-3-8B")),
     ("Mistral", "mistralai/Mistral-7B-v0.1", lambda t: hf_tokens(t, "mistralai/Mistral-7B-v0.1")),

@@ -3,7 +3,7 @@
 Compare how different AI tokenizers break text into tokens. Tokens are displayed with alternating background colors so boundaries are easy to spot.
 
 **Tokenizers compared:**
-- GPT-4o (`o200k_base`)
+- GPT-5 (`o200k_base`)
 - GPT-4 / GPT-3.5 (`cl100k_base`)
 - LLaMA 3
 - Mistral
@@ -40,7 +40,7 @@ Example output:
 ```
 Text: "The quick brown fox jumps over the lazy dog"
 
-GPT-4o (o200k_base) — 9 tokens:
+GPT-5 (o200k_base) — 9 tokens:
 |The| quick| brown| fox| jumps| over| the| lazy| dog|
 
 GPT-4 / 3.5 (cl100k_base) — 9 tokens:
