@@ -71,10 +71,10 @@ def main():
     if len(sys.argv) >= 3 and sys.argv[1] == "-f":
         with open(sys.argv[2]) as f:
             text = f.read()
-    elif not sys.stdin.isatty():
-        text = sys.stdin.read()
-    else:
+    elif len(sys.argv) >= 2:
         text = " ".join(sys.argv[1:])
+    else:
+        text = sys.stdin.read()
 
     label = text if len(text) <= 80 else text[:77] + "..."
     print(f'{DIM}Text: "{label}"{RESET}\n')
